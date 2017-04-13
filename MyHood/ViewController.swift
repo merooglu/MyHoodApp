@@ -10,16 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var mainTableView: MainTableView!
+    
+   // var posts = [Post]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        mainTableView.viewController = self
+        DataService.instance.loadPosts()
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onPostsLoaded(notif:)), name: Notification.Name("postsLoaded"), object: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func onPostsLoaded(notif: AnyObject){
+        mainTableView.tableView.reloadData()
     }
-
-
 }
 

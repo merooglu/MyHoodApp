@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B12E8801E9EBF2100A9E8DA /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B12E87F1E9EBF2100A9E8DA /* DataService.swift */; };
 		1B4A50C71E9E4DB700DF84D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A50C61E9E4DB700DF84D0 /* AppDelegate.swift */; };
 		1B4A50C91E9E4DB700DF84D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A50C81E9E4DB700DF84D0 /* ViewController.swift */; };
 		1B4A50CC1E9E4DB700DF84D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A50CA1E9E4DB700DF84D0 /* Main.storyboard */; };
 		1B4A50CE1E9E4DB700DF84D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A50CD1E9E4DB700DF84D0 /* Assets.xcassets */; };
 		1B4A50D11E9E4DB700DF84D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4A50CF1E9E4DB700DF84D0 /* LaunchScreen.storyboard */; };
+		1B4A50DA1E9E51E600DF84D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A50D91E9E51E600DF84D0 /* Post.swift */; };
+		1B4A50DE1E9E635800DF84D0 /* MainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A50DD1E9E635800DF84D0 /* MainTableView.swift */; };
+		1B4A50E11E9E692900DF84D0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A50E01E9E692900DF84D0 /* PostCell.swift */; };
+		1B4A50E41E9E74B200DF84D0 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A50E31E9E74B200DF84D0 /* AddPostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B12E87F1E9EBF2100A9E8DA /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		1B4A50C31E9E4DB700DF84D0 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B4A50C61E9E4DB700DF84D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B4A50C81E9E4DB700DF84D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,10 @@
 		1B4A50CD1E9E4DB700DF84D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B4A50D01E9E4DB700DF84D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4A50D21E9E4DB700DF84D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B4A50D91E9E51E600DF84D0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1B4A50DD1E9E635800DF84D0 /* MainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableView.swift; sourceTree = "<group>"; };
+		1B4A50E01E9E692900DF84D0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		1B4A50E31E9E74B200DF84D0 /* AddPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B12E87E1E9EBEFB00A9E8DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1B12E87F1E9EBF2100A9E8DA /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		1B4A50BA1E9E4DB700DF84D0 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +72,43 @@
 		1B4A50C51E9E4DB700DF84D0 /* MyHood */ = {
 			isa = PBXGroup;
 			children = (
+				1B12E87E1E9EBEFB00A9E8DA /* Services */,
+				1B4A50D81E9E51D600DF84D0 /* Model */,
+				1B4A50DF1E9E68F100DF84D0 /* View */,
+				1B4A50E21E9E744D00DF84D0 /* Controller */,
 				1B4A50C61E9E4DB700DF84D0 /* AppDelegate.swift */,
-				1B4A50C81E9E4DB700DF84D0 /* ViewController.swift */,
-				1B4A50CA1E9E4DB700DF84D0 /* Main.storyboard */,
 				1B4A50CD1E9E4DB700DF84D0 /* Assets.xcassets */,
-				1B4A50CF1E9E4DB700DF84D0 /* LaunchScreen.storyboard */,
 				1B4A50D21E9E4DB700DF84D0 /* Info.plist */,
 			);
 			path = MyHood;
+			sourceTree = "<group>";
+		};
+		1B4A50D81E9E51D600DF84D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A50D91E9E51E600DF84D0 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1B4A50DF1E9E68F100DF84D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A50CA1E9E4DB700DF84D0 /* Main.storyboard */,
+				1B4A50E01E9E692900DF84D0 /* PostCell.swift */,
+				1B4A50CF1E9E4DB700DF84D0 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1B4A50E21E9E744D00DF84D0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B4A50C81E9E4DB700DF84D0 /* ViewController.swift */,
+				1B4A50DD1E9E635800DF84D0 /* MainTableView.swift */,
+				1B4A50E31E9E74B200DF84D0 /* AddPostViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +143,7 @@
 				TargetAttributes = {
 					1B4A50C21E9E4DB700DF84D0 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 76NANZTYJ2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4A50DA1E9E51E600DF84D0 /* Post.swift in Sources */,
+				1B12E8801E9EBF2100A9E8DA /* DataService.swift in Sources */,
 				1B4A50C91E9E4DB700DF84D0 /* ViewController.swift in Sources */,
+				1B4A50DE1E9E635800DF84D0 /* MainTableView.swift in Sources */,
 				1B4A50C71E9E4DB700DF84D0 /* AppDelegate.swift in Sources */,
+				1B4A50E41E9E74B200DF84D0 /* AddPostViewController.swift in Sources */,
+				1B4A50E11E9E692900DF84D0 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 76NANZTYJ2;
 				INFOPLIST_FILE = MyHood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyHood;
@@ -274,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 76NANZTYJ2;
 				INFOPLIST_FILE = MyHood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MyHood;
@@ -301,6 +356,7 @@
 				1B4A50D71E9E4DB700DF84D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
